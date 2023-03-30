@@ -4,6 +4,7 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const Blog = (props) => {
     const {img , title, author, author_img,publish, reading, tag} = props.blog
+    const sideCart = props.handelSideCart
     return (
         <div className='w-full mb-10 px-5'>
             <img className='md:h-[650px] w-full rounded-lg mb-8' src={img} alt="reactjs" />
@@ -17,7 +18,7 @@ const Blog = (props) => {
                 </div>
                 <div className='flex items-center gap-2 text-[#726e6e]'>
                     <p>{reading} min read</p>
-                    <span className='hover:text-[#6047EC] cursor-pointer'><FontAwesomeIcon icon={faBookmark} /></span>
+                    <span onClick={() => sideCart(props.blog)} className='hover:text-[#6047EC] cursor-pointer'><FontAwesomeIcon icon={faBookmark} /></span>
                 </div>
             </div>
             <h1 className='my-5 text-3xl md:text-5xl font-bold'>{title}</h1>

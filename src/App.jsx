@@ -6,21 +6,26 @@ import Sidecart from './Components/side-cart/Sidecart';
 
 function App() {
   const [data, setData] = useState([]);
+  const [sidecart, setSidecart] = useState([]);
   useEffect(()=>{
     fetch('data.json')
     .then(res => res.json())
     .then(post => setData(post))
   },[])
+  const handelSideCart = (blog) =>{
+    setSidecart([...sidecart, blog])
+}
+// console.log(sidecart);
   return (
     <>
      <Navbar />
      <div className='container mx-auto grid grid-cols-1 md:grid-cols-6'>
      <div className='col-span-4'>
-     {data.map(blog => <Blog blog={blog} key={blog.id} />)}
+     {data.map(blog => <Blog blog={blog} key={blog.id} handelSideCart={handelSideCart} />)}
      
      </div>
      <span className='col-span-2'>
-     <Sidecart />
+     <Sidecart sidecart={sidecart}/>
      </span>
      </div>
     </>
