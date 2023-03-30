@@ -1,11 +1,16 @@
 import React from 'react';
 
-const Sidecart = ({sidecart}) => {
+const Sidecart = (props) => {
+    const sidecart = props.sidecart
+    const read = props.read
     let reading = 0;
     let title = [];
     for (const cartinfo of sidecart){
-        reading = reading + cartinfo.reading
+        // 
         title = [...title, cartinfo.title]
+    }
+    for (const time of read){
+        reading = reading + time.reading
 
     }
     // console.log(sidecart);
