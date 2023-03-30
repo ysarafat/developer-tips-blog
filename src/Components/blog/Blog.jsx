@@ -19,12 +19,12 @@ const Blog = (props) => {
                 </div>
                 <div className='flex items-center gap-2 text-[#726e6e]'>
                     <p>{reading} min read</p>
-                    <span onClick={() => sideCart(props.blog)} className='hover:text-[#6047EC] cursor-pointer'><FontAwesomeIcon icon={faBookmark} /></span>
+                    <span onClick={() => sideCart(props.blog) } className='hover:text-[#6047EC] cursor-pointer'><FontAwesomeIcon icon={faBookmark} />  </span> 
                 </div>
             </div>
             <h1 className='my-5 text-3xl md:text-5xl font-bold'>{title}</h1>
             <p className='text-xl text-[#726e6e] my-5'>{tag}</p>
-            <button onClick={() => readTime(props.blog)} className='text-xl underline text-[#6047EC] hover:text-[#2a0ada]'>Mark as Read</button>
+            <button onClick={() => readTime(props.blog)} className='text-xl underline text-[#6047EC] hover:text-[#2a0ada]'>Mark as Read </button>
         </div>
     );
 };

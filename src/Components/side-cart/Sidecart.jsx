@@ -6,14 +6,11 @@ const Sidecart = (props) => {
     let reading = 0;
     let title = [];
     for (const cartinfo of sidecart){
-        // 
         title = [...title, cartinfo.title]
     }
     for (const time of read){
         reading = reading + time.reading
-
     }
-    // console.log(sidecart);
     return (
         <div className=' md:sticky top-[66px] px-5'>
             <div className='border border-[#6047EC] bg-[#6047EC1A] px-12 py-5 rounded-lg mb-7'>

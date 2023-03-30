@@ -3,6 +3,8 @@ import './App.css'
 import Blog from './Components/blog/Blog';
 import Navbar from './Components/navbar/Navbar'
 import Sidecart from './Components/side-cart/Sidecart';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [data, setData] = useState([]);
@@ -15,10 +17,12 @@ function App() {
   },[])
   const handelSideCart = (blog) =>{
     setSidecart([...sidecart, blog])
+    toast("Blog has been bookmarked successfully");
     
 }
 const readTime = (blog) => {
   setRead([...read, blog])
+  toast("Reading time added successfully")
 }
 // console.log(sidecart);
   return (
@@ -33,6 +37,7 @@ const readTime = (blog) => {
      <Sidecart sidecart={sidecart} read={read}/>
      </span>
      </div>
+     <ToastContainer />
     </>
   )
 }
