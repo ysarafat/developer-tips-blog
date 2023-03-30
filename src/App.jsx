@@ -13,7 +13,9 @@ function App() {
   return (
     <>
      <Navbar />
+     <div className='container mx-auto'>
      {data.map(blog => <Blog blog={blog} key={blog.id} />)}
+     </div>
     </>
   )
 }

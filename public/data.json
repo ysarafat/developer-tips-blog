@@ -1,13 +1,42 @@
 [
     {
         "id" : "hjksdt798rew5t9845",
-        "title" : "Top 10 tips for React.JS developers",
-        "img" : "https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?w=1380&t=st=1680191103~exp=1680191703~hmac=adbff963b44be7a3cee1f22ec25154a74a2153bd96f8d7a22655f59a87543b44",
+        "title" : "Top 10 tips for React.JS developers - dev tips",
+        "img" : "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         "reading" : "12",
         "author" : "Yeasir Arafat",
         "author_img" : "../src/assets/image/author1.png",
         "publish": "3 March 2023",
         "tag" : "#react #Jstips"
-        
+    },
+    {
+        "id" : "745hdsfbfsbsfrbr7",
+        "title" : "React Best Practices – Tips for Writing Better React Code in 2023",
+        "img" : "https://img.freepik.com/free-vector/programmers-using-javascript-programming-language-computer-tiny-people-javascript-language-javascript-engine-js-web-development-concept_335657-2412.jpg?w=1380&t=st=1680194384~exp=1680194984~hmac=84d51285f248155155a0ca781a8e0adbf68d46bf46086321fd390b3bce8a1237",
+        "reading" : "14",
+        "author" : "Md Estiak",
+        "author_img" : "../src/assets/image/author2.png",
+        "publish": "1 February  2023",
+        "tag" : "#react_js #vite"
+    },
+    {
+        "id" : "sdfsfweerwerw32e2",
+        "title" : "13 Useful JavaScript Array Tips and Tricks You Should Know",
+        "img" : "https://images.pexels.com/photos/4218883/pexels-photo-4218883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "reading" : "16",
+        "author" : "Aman Khan",
+        "author_img" : "../src/assets/image/author3.png",
+        "publish": "10 March  2022",
+        "tag" : "#JavaScript #js_array"
+    },
+    {
+        "id" : "745hdsfbfsbsfrbr7",
+        "title" : "useState() Hook in React - A Complete Guide",
+        "img" : "https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "reading" : "9",
+        "author" : "Robiul Islam",
+        "author_img" : "../src/assets/image/author2.png",
+        "publish": "25 February  2023",
+        "tag" : "#useState #react_hook"
     }
 ]
