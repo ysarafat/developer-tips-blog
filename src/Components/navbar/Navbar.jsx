@@ -1,9 +1,8 @@
 import React from 'react';
 import user from '../../assets/image/user.png'
-import './navbar.css'
 const Navbar = () => {
     return (
-        <nav className='container mx-auto px-4 '>
+        <nav className='container mx-auto px-4 sticky top-0 z-10 '>
             <div className="navbar bg-base-100 ">
   <div className="flex-1">
     <a className="btn btn-ghost normal-case text-xl">DEV TIPS</a>
