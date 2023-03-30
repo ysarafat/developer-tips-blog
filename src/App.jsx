@@ -13,7 +13,7 @@ function App() {
   return (
     <>
      <Navbar />
-     {data.map(blog => <Blog blog={blog} />)}
+     {data.map(blog => <Blog blog={blog} key={blog.id} />)}
     </>
   )
 }
