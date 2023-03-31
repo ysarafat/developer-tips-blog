@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Blog from './Components/blog/Blog';
 import Navbar from './Components/navbar/Navbar'
 import Sidecart from './Components/side-cart/Sidecart';
+import Question from './Components/question/Question'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css'
@@ -70,7 +71,9 @@ const handelCart = (blog) => {
      <Sidecart cart={cart}  read={read} />
      </span>
      </div>
+     <Question />
      <ToastContainer />
+     
     </>
   )
 }
