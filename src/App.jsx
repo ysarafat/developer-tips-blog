@@ -24,16 +24,16 @@ const readTime = (blog) => {
   if (previousReadingTime){
     const isThisMark = previousReadingTime.find(bl => bl.id === blog.id);
     if(isThisMark){
-      toast("Already Bookmarked Spent Time.")
+      toast("Already mark as read")
     } else{
       readingTime.push(...previousReadingTime,blog)
       localStorage.setItem("reading-time" , JSON.stringify(readingTime))
-      toast("Reading time added successfully");
+      toast("Mark as read successfully");
     }
   } else {
     readingTime.push(blog)
     localStorage.setItem("reading-time" , JSON.stringify(readingTime))
-    toast("Reading time added successfully");
+    toast("Mark as read successfully");
   }
   setRead(readingTime)
 }
