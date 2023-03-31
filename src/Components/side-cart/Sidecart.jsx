@@ -22,7 +22,7 @@ const Sidecart = ({read, cart}) => {
         <div className=' md:sticky top-[66px] px-5'>
             <div className='border border-[#6047EC] bg-[#6047EC1A] px-12 py-5 rounded-lg mb-7'>
                 
-                <h2 className='text-lg md:text-2xl text-[#6047EC] font-bold'>Spent time on read : {totalRead? totalRead : 0} </h2>
+                <h2 className='text-lg md:text-2xl text-[#6047EC] font-bold'>Spent time on read : {totalRead? totalRead : 0} minutes </h2>
             </div>
             <div className='bg-[#1111110d] p-7 rounded-lg  md:mb-0 mb-5'>
                 <h1 className='text-lg md:text-2xl font-bold mb-4'>Bookmarked Blogs : {cartinfo?.length ? cartinfo.length : 0 }</h1>
