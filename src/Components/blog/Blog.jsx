@@ -8,12 +8,12 @@ const Blog = (props) => {
     const handelSideCart = props.handelCart;
     return (
         <div className='w-full mb-10 px-5'>
-            <img className='md:h-[650px] w-full rounded-lg mb-8' src={img} alt="reactjs" />
+            <img className='md:h-[550px] w-full rounded-lg mb-8' src={img} alt="reactjs" />
             <div className='flex justify-between'>
                 <div className='flex items-center gap-6'>
                     <img src={author_img} alt="author" />
                     <div >
-                        <p className='text-2xl font-bold'>{author}</p>
+                        <p className='md:text-2xl text-lg font-bold'>{author}</p>
                         <p className='text-base text-[#726e6e]'>{publish}</p>
                     </div>
                 </div>
