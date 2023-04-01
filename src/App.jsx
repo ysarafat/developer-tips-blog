@@ -24,16 +24,16 @@ const readTime = (blog) => {
   if (previousReadingTime){
     const isThisMark = previousReadingTime.find(bl => bl.id === blog.id);
     if(isThisMark){
-      toast("Already mark as read")
+      toast.warn("Already mark as read")
     } else{
       readingTime.push(...previousReadingTime,blog)
       localStorage.setItem("reading-time" , JSON.stringify(readingTime))
-      toast("Mark as read successfully");
+      toast.success("Mark as read successfully");
     }
   } else {
     readingTime.push(blog)
     localStorage.setItem("reading-time" , JSON.stringify(readingTime))
-    toast("Mark as read successfully");
+    toast.success("Mark as read successfully");
   }
   setRead(readingTime)
 }
@@ -45,16 +45,16 @@ const handelCart = (blog) => {
   if (previousBookmark){
     const isThisMark = previousBookmark.find(bl => bl.id === blog.id);
     if(isThisMark){
-      toast("Already bookmarked it.")
+      toast.warn("Already bookmarked this blog")
     } else{
       bookmark.push(...previousBookmark,blog)
       localStorage.setItem("bookmark" , JSON.stringify(bookmark))
-      toast("Bookmark added successfully");
+      toast.success("Bookmark added successfully");
     }
   } else { 
     bookmark.push(blog)
     localStorage.setItem("bookmark" , JSON.stringify(bookmark))
-    toast("Bookmark added successfully");
+    toast.success("Bookmark added successfully");
   }
   setCart(previousBookmark)
   
